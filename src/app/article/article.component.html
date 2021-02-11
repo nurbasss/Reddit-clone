@@ -1,0 +1,20 @@
+<div class="card mb-3" style="max-width: 550px ;">
+    <div class="row no-gutters " >
+      <div class="col" style="padding:20px 45px; background-color: rgb(199, 199, 199);">
+        <div class="" style="font-size: 60px; text-align: center;">{{article.votes}}</div>
+        <div class="" style="font-size: 30px; text-align: center;">
+            Points
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-body" style="padding: 25px; width: 350px;">
+          <h2 class="card-title">{{article.title}}</h2>
+          <p class="card-text"><small class="text-muted"><a href="{{article.link}}">{{article.link}}</a></small></p>
+          <p class="card-text">({{ article.domain() }})</p>
+          <div class="d-flex flex-row justify-content-between" style="color: blue; font-size: large;">
+                <div class="up" (click) = "upVote()"><a style="cursor: pointer;"><i class="fa fa-arrow-up"></i> upvote</a></div>            
+                <div class="down" (click) = "downVote()"><a style="cursor: pointer;"><i class="fa fa-arrow-down"></i> downvote</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
