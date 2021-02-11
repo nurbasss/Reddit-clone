@@ -1,5 +1,7 @@
 # AngularReddit
 
+User submits article with link and others can vote up or vote down.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
 
 ## Development server
